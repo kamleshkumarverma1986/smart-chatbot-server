@@ -1,0 +1,36 @@
+{
+  "name": "gethome",
+  "version": "1.0.0",
+  "description": "Find Your Dream Home in India",
+  "main": "index.js",
+  "scripts": {
+    "start": "sudo pm2 start ./dist/server.js",
+    "stop": "sudo pm2 stop ./dist/server.js",
+    "restart": "pm2 restart server",
+    "show": "pm2 show server",
+    "logs": "pm2 logs server",
+    "monitor": "pm2 monit",
+    "status": "pm2 status"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamleshkumarverma1986/GetHome.git"
+  },
+  "author": "kamlesh verma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamleshkumarverma1986/GetHome/issues"
+  },
+  "homepage": "https://github.com/kamleshkumarverma1986/GetHome#readme",
+  "dependencies": {
+    "@google-cloud/storage": "^4.0.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.7",
+    "mongoose-relationship": "^0.1.5",
+    "pm2": "^4.1.2",
+    "query-types": "^0.1.4",
+    "yarn": "^1.22.10"
+  }
+}
